@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel = "stylesheet" type = "text/css" href = "style/style.css">
+	
+	<script src = "js/signup.js"> </script>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	
+	
+</head>
+
+<body>
+	<ul class = "menu2">
+		<li class = "menu2"><a class = "menu2" href = "home.html" style = "color:Black;">Home</a></li>
+		<li class = "menu2" ><a class = "menu2" href = "Service">Services</a></li>
+		<li class = "menu2"><a class = "menu2" href = "Tracking">Tracking</a></li>
+		<li class = "menu2"><a class = "menu2" href = "Shipping">Shipping</a></li>
+		<li class = "menu2"><a class = "menu2" href = "About Us">About Us</a></li>
+		<li class = "menu2"><a class = "menu2" href = "contact.html">Contact</a></li>
+		<li class = "searchform">
+			 <input type="text" placeholder="Search.." name="search">
+			 <button class = "sbtn">Search</button>
+	</ul>
+	
+	<ul class = "menu">
+		<li class = "menu"><a class = "menu" href = "MyProfile">My Profile</a></li>
+		<li class = "menu"><a class = "menu" href = "https://maps.google.com">You are at</a></li>
+		<li class = "menu" ><a class = "menu" href = "logIn">Log in</a></li>
+		<li class = "menu"><a class = "menu" href = "#" style = "color:#808080;">Sign up</a></li>
+	</ul>
+	
+	<header>
+	<img src = "images/i10.jpg" alt ="logo" width="1350" height="200">
+	</header>
+	
+	<div class="container" style = "margin-top:20px;">
+		
+		<form action = "home.html" method = "POST" onsubmit = "return Match()">
+		
+		<h3><b>Sign Up Here !</b></h3>
+		
+		<div class="form-group">
+		<label for="fn">First Name:</label><br/>
+		<input class="form-control" type = "text" name = "fn"  id = "fname" placeholder = "First Name" required>
+		</div>
+		
+		<div class="form-group">
+		<label for="ln">Last Name:</label><br/>
+		<input class="form-control" type = "text" name = "ln" id = "lname" placeholder = "Last Name" required><br/>
+		</div>
+		
+		<div class="form-group">
+		<label for="gen">Gender :</label>
+		<input type = "radio" value = "Male" name = "gender" class="mb-2 mr-sm-2">Male
+		<input type = "radio" value = "Female" name = "gender" class="mb-2 mr-sm-2">Female<br/>	
+		</div>
+		
+		<div class="form-group">
+		<label for="DB">Date of Birth:</label><br/>
+		<input class="form-control" type = "date" name = "bd" id = "DOB" required>
+		</div>
+		
+		<div class="form-group">
+		<label for="coun">Country:</label><br/>
+		<form name = "country">
+		<select name = "select country" class="form-control">
+			<option>Country
+			<option>Afganistan
+			<option>Argentina
+			<option>Australia 
+			<option>Austria
+			<option>Bahamas
+			<option>Bahrain
+			<option>Bangladesh
+			<option>Belarus
+			<option>Belgium
+			<option>Brazil
+			<option>Cand
+			<option>Chile
+			<option>China
+			<option>Colombia
+			<option>Cuba
+			<option>Cyprus
+			<option>Denmark
+			<option>Dubai
+			<option>Egypt
+			<option>Ethiopia
+			<option>Finland
+			<option>France
+			<option>Georgia
+			<option>Germany
+			<option>Greece
+			<option>Guyana
+			<option>Haiti
+			<option>Hungary
+			<option>Iceland
+			<option>India
+			<option>Indonesia
+			<option>Iran
+			<option>Iraq
+			<option>Ireland
+			<option>Israel
+			<option>Italy
+			<option>Jamaica
+			<option>Japan
+			<option>Jordan
+			<option>Kenya
+			<option>Korea
+			<option>Kuwait
+			<option>Lebanon
+			<option>Libiya
+			<option>Madagscar
+			<option>Malasia
+			<option>Maldives
+			<option>Mexico
+			<option>Morocco
+			<option>Nepal
+			<option>Netherlnd
+			<option>New Zealand
+			<option>Nigeria
+			<option>Norway
+			<option>Oman
+			<option>Pakistan
+			<option>Panama
+			<option>Peru
+			<option>Philippines
+			<option>Porland
+			<option>Portugal
+			<option>Qatar
+			<option>Romania
+			<option>Russia
+			<option>San Marino
+			<option>Serbia
+			<option>Singapore
+			<option>South Africa
+			<option>Spain
+			<option>Sri Lanka
+			<option>Sudan
+			<option>Sweden
+			<option>Switzerlnd
+			<option>Tanzania
+			<option>Thailand
+			<option>Turkey
+			<option>Uganda
+			<option>Ukraine
+			<option>United Arab Emirates
+			<option>United Kingdom
+			<option>United State of America
+			<option>Uruguay
+			<option>Uzbekistan
+			<option>Venezuela
+			<option>Vietnam
+			<option>Yemen
+			<option>Zambia
+			<option>Zimbabwe</option></select>
+			</form>
+		</div>
+		
+		<div class="form-group">
+		<label for="pN">Mobile Number:</label><br/>
+		<input class="form-control" type = "phone" name = "pNum" id = "pNo" placeholder = "Mobile Number" pattern = "[0-9]{10}" required>
+		</div>
+		
+		<div class="form-group">
+		<label for="mal">E-mail:</label><br/>
+		<input class="form-control" type ="email" name = "e-mail" id = "mail" placeholder = "E-mail" required>
+		</div>
+		
+		<div class="form-group">
+		<label for="add">Address:</label><br/>
+		<textarea class="form-control" rows ="4" cols = "40" name = "addrs" id = "address" required></textarea>
+		</div>
+		
+		<div class="form-group">
+		<label for="pawd">Password:</label><br/>
+		<input class="form-control" type ="password" name = "pswd" id = "passwd" required>
+		</div>
+		
+		<div class="form-group">
+		<label for="psw">Re-enter the Password:</label><br/>
+		<input class="form-control" type = "password" name = "psswrd" id = "pw" required>
+		</div>
+		
+		<div class="form-group form-check">
+		<label class="form-check-label">
+		<input type = "checkbox" id ="check" onclick = "Check()" class="form-check-input">By clicking, I accept all the terms of Privacy and policy
+		</label>
+		</div>
+		
+		<input class="btn btn-primary" type = "submit" value = "Sign Up" name = "submission" id = "submission" disabled><br/><br/>
+		
+		</form>
+
+	</div>
+
+	<footer style = "margin-top:10px;">MUSIX ONLINE</footer>
+</body>
+
+</html>
